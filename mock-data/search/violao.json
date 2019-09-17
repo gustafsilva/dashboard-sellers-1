@@ -1,0 +1,178 @@
+{
+    "data": {
+        "id": "757596000",
+        "review_count": 0,
+        "review_score": 0,
+        "variations": [
+            {
+                "id": "757596000",
+                "ean": "7896584042566",
+                "title": "Violão Elétrico Folk Memphis",
+                "description": "",
+                "reference": "",
+                "brand": "Memphis",
+                "sellers": [
+                    {
+                        "description": "Seller 1",
+                        "id": "seller1",
+                        "sku": "470",
+                        "delivery_availability": "nationwide",
+                        "list_price": "419.00",
+                        "price": "419.00",
+                        "stock_count": 59,
+                        "stock_type": "on_seller",
+                        "sold_count": 0,
+                        "sells_to_company": false,
+                        "store_pickup_available": false,
+                        "delivery_plus_1": false,
+                        "delivery_plus_2": false,
+                        "status": "published",
+                        "order": 2,
+                        "best_price": {
+                            "payment_method_id": "boleto",
+                            "payment_method_description": "seller1-ED-10-boleto",
+                            "discount": "0.00",
+                            "total_amount": "419.00"
+                        },
+                        "best_installment_plan": {
+                            "payment_method_id": "visa",
+                            "payment_method_description": "sem juros",
+                            "installment_quantity": 12,
+                            "installment_amount": "34.92",
+                            "interest": "0.00",
+                            "total_amount": "419.00"
+                        },
+                        "details": {
+                            "address": {
+                                "address": "Av. Exemplo",
+                                "number": "0",
+                                "complement": "",
+                                "district": "",
+                                "city": "Maringá",
+                                "state": "PR",
+                                "country": "Brasil",
+                                "zipcode": "00000000"
+                            },
+                            "legal_name": "Jose",
+                            "document_number": "999154878787",
+                            "name": "Jose",
+                            "sells_to_company": false,
+                            "id": "jose"
+                        }
+                    },
+                    {
+                        "description": "Seller 2",
+                        "id": "seller2",
+                        "sku": "470",
+                        "delivery_availability": "nationwide",
+                        "list_price": "484.90",
+                        "price": "484.90",
+                        "stock_count": 10,
+                        "stock_type": "on_seller",
+                        "sold_count": 0,
+                        "sells_to_company": false,
+                        "store_pickup_available": false,
+                        "delivery_plus_1": false,
+                        "delivery_plus_2": false,
+                        "status": "published",
+                        "order": 2,
+                        "best_price": {
+                            "payment_method_id": "boleto",
+                            "payment_method_description": "seller2-ED-10-boleto",
+                            "discount": "0.00",
+                            "total_amount": "484.90"
+                        },
+                        "best_installment_plan": {
+                            "payment_method_id": "visa",
+                            "payment_method_description": "sem juros",
+                            "installment_quantity": 12,
+                            "installment_amount": "40.41",
+                            "interest": "0.00",
+                            "total_amount": "484.90"
+                        },
+                        "details": {
+                            "address": {
+                                "address": "Av. Exemplo",
+                                "number": "0",
+                                "complement": "",
+                                "district": "",
+                                "city": "São Paulo",
+                                "state": "SP",
+                                "country": "Brasil",
+                                "zipcode": "00000000"
+                            },
+                            "contacts": [
+                                {
+                                    "name": "Maria",
+                                    "email": "maria@email.com.br",
+                                    "phone": "1199999999",
+                                    "type": null
+                                }
+                            ],
+                            "legal_name": "Maria",
+                            "document_number": "999154878787",
+                            "name": "Maria",
+                            "sells_to_company": true,
+                            "id": "maria"
+                        }
+                    }
+                ],
+                "attributes": [],
+                "url": "violao/instrumentos-musicais/s/im/isvi/",
+                "canonical_ids": [
+                    "7180642",
+                    "6735802",
+                    "6147676",
+                    "5579520"
+                ],
+                "product_total_review_count": 0,
+                "product_average_rating": 0,
+                "categories": [
+                    {
+                        "id": "IICO",
+                        "name": "Moda",
+                        "composite_name": "IICO|Violao",
+                        "url": "violao/instrumentos-musicais/s/im/",
+                        "subcategories": [
+                            {
+                                "id": "MHCL",
+                                "name": "Violão",
+                                "composite_name": "MHCL|Violao",
+                                "url": "violao/instrumentos-musicais/s/im/isvi/mhcl/"
+                            }
+                        ]
+                    }
+                ],
+                "is_delivery_available": true,
+                "dimensions": {
+                    "width": 0.52,
+                    "depth": 0.42,
+                    "weight": 18,
+                    "height": 0.33
+                },
+                "factsheet": {},
+                "main_media": {
+                    "seller_sku": "23860",
+                    "seller_id": "mega-mamute"
+                },
+                "media": {
+                    "audios": [],
+                    "images": [
+                        "https://a-static.mlcdn.com.br/618x463/violao-eletrico-folk-memphis-natural-md18-tagima/estrela10/50468/76562e091672fb40f46986fb4db89cd6.jpg"
+                    ],
+                    "podcasts": [],
+                    "videos": []
+                },
+                "path": "violao/instrumentos-musicais/s/im/isvi/",
+                "type": "product",
+                "composite_id": "hj77hef8cj-718064200"
+            }
+        ],
+        "attributes": [],
+        "canonical_ids": [],
+        "type": "product",
+        "sold_count": 0,
+        "is_new_product": false
+    },
+    "partner_id": "0"
+}

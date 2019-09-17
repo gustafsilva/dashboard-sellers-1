@@ -1,0 +1,221 @@
+{
+    "meta": {
+        "limit": 16,
+        "totalCount": 16,
+        "version": "3.27.0",
+        "algorithm": "",
+        "appserver": ""
+    },
+    "objects": [
+        {
+            "productId": "767714000",
+            "name": "Violão Eletroacústico Tagima Md18 6 Cordas Sunburst Com Afinador",
+            "stemName": "Violão Eletroacústico Tagima Md18 6 Cordas Sunburst Com Afinador",
+            "categoryIds": [
+                "ISVI IICO"
+            ],
+            "departmentIds": [
+                "IM"
+            ],
+            "currentPrice": 484.9,
+            "onSale": false
+        },
+        {
+            "productId": "771269300",
+            "name": "Violão Elétrico Ac-60 Sunbusrst Tagima Memphis",
+            "stemName": "Violão Elétrico Ac-60 Sunbusrst Tagima Memphis",
+            "categoryIds": [
+                "ISVI IICO"
+            ],
+            "departmentIds": [
+                "IM"
+            ],
+            "currentPrice": 411.9,
+            "onSale": false
+        },
+        {
+            "productId": "743540900",
+            "name": "Violão Elétrico Woodstock Cutway Natural Fosco Tw 29 Tagima",
+            "stemName": "Violão Elétrico Woodstock Cutway Natural Fosco Tw 29 Tagima",
+            "categoryIds": [
+                "ISVI IICO"
+            ],
+            "departmentIds": [
+                "IM"
+            ],
+            "currentPrice": 499,
+            "onSale": false
+        },
+        {
+            "productId": "752698500",
+            "name": "Violão Acústico 6 Cordas Cutway Preto Aubvo621 Auburn",
+            "stemName": "Violão Acústico 6 Cordas Cutway Preto Aubvo621 Auburn",
+            "categoryIds": [
+                "ISVI IICO"
+            ],
+            "departmentIds": [
+                "IM"
+            ],
+            "currentPrice": 199.9,
+            "onSale": false
+        },
+        {
+            "productId": "639940100",
+            "name": "Violão 6 Cordas Aço Folk Cutaway Acústico - VCK 371 MF Vogga",
+            "stemName": "Violão 6 Cordas Aço Folk Cutaway Acústico - VCK 371 MF Vogga",
+            "categoryIds": [
+                "ISVI IICO"
+            ],
+            "departmentIds": [
+                "IM"
+            ],
+            "currentPrice": 392.96,
+            "onSale": false
+        },
+        {
+            "productId": "559108900",
+            "name": "Violão Acústico Conthey Queen's Preto Cordas de Aço D1-37516",
+            "stemName": "Violão Acústico Conthey Queen's Preto Cordas de Aço D1-37516",
+            "categoryIds": [
+                "ISVI IICO"
+            ],
+            "departmentIds": [
+                "IM"
+            ],
+            "currentPrice": 194.99,
+            "onSale": false
+        },
+        {
+            "productId": "757987800",
+            "name": "Violão Acústico Tagina Natural Ac40 Memphis",
+            "stemName": "Violão Acústico Tagina Natural Ac40 Memphis",
+            "categoryIds": [
+                "ISVI IICO"
+            ],
+            "departmentIds": [
+                "IM"
+            ],
+            "currentPrice": 295.9,
+            "onSale": false
+        },
+        {
+            "productId": "754012500",
+            "name": "Violão Acústico Nylon Preto Memphis Ac39 Tagima",
+            "stemName": "Violão Acústico Nylon Preto Memphis Ac39 Tagima",
+            "categoryIds": [
+                "ISVI IICO"
+            ],
+            "departmentIds": [
+                "IM"
+            ],
+            "currentPrice": 263.9,
+            "onSale": false
+        },
+        {
+            "productId": "je7hj658e5",
+            "name": "Violão Elétrico Tagima Memphis MD-18 SB Sunburst",
+            "stemName": "Violão Elétrico Tagima Memphis MD-18 SB Sunburst",
+            "categoryIds": [
+                "ISVI"
+            ],
+            "departmentIds": [
+                "IM"
+            ],
+            "currentPrice": 396.99,
+            "onSale": false
+        },
+        {
+            "productId": "gd4fkkjhak",
+            "name": "Violão Estudante Clássico Aço Austin 946 Natural - Dinhos",
+            "stemName": "Violão Estudante Clássico Aço Austin 946 Natural - Dinhos",
+            "categoryIds": [
+                "ISVI IICO"
+            ],
+            "departmentIds": [
+                "IM"
+            ],
+            "currentPrice": 184.9,
+            "onSale": false
+        },
+        {
+            "productId": "740463700",
+            "name": "Violão Elétrico Aço Dallas Tuner Roxo 5 Bandas Tagima",
+            "stemName": "Violão Elétrico Aço Dallas Tuner Roxo 5 Bandas Tagima",
+            "categoryIds": [
+                "ISVI IICO"
+            ],
+            "departmentIds": [
+                "IM"
+            ],
+            "currentPrice": 706.9,
+            "onSale": false
+        },
+        {
+            "productId": "kc52jb018b",
+            "name": "Violão Giannini Flat Eletroacústico SF14 NT Aço Com Afinador",
+            "stemName": "Violão Giannini Flat Eletroacústico SF14 NT Aço Com Afinador",
+            "categoryIds": [
+                "ISVI IICO"
+            ],
+            "departmentIds": [
+                "IM"
+            ],
+            "currentPrice": 358.9,
+            "onSale": false
+        },
+        {
+            "productId": "fa21630j07",
+            "name": "Violão Giannini Flat Eletroacústico SF14 BK Aço Com Afinador",
+            "stemName": "Violão Giannini Flat Eletroacústico SF14 BK Aço Com Afinador",
+            "categoryIds": [
+                "ISVI IICO"
+            ],
+            "departmentIds": [
+                "IM"
+            ],
+            "currentPrice": 368.9,
+            "onSale": false
+        },
+        {
+            "productId": "632899800",
+            "name": "Teclado Musical 61 Teclas MK 2106 - Visor Lcd + Fonte + Suporte Partitura",
+            "stemName": "Teclado Musical 61 Teclas MK 2106 - Visor Lcd + Fonte + Suporte Partitura",
+            "categoryIds": [
+                "TEAR IIPT"
+            ],
+            "departmentIds": [
+                "IM"
+            ],
+            "currentPrice": 379,
+            "onSale": false
+        },
+        {
+            "productId": "agd499c258",
+            "name": "Violão Acústico Auburn Aubvo621MS Cutway 6 Cordas Aço Preto",
+            "stemName": "Violão Acústico Auburn Aubvo621MS Cutway 6 Cordas Aço Preto",
+            "categoryIds": [
+                "ISVI IICO"
+            ],
+            "departmentIds": [
+                "IM"
+            ],
+            "currentPrice": 229,
+            "onSale": false
+        },
+        {
+            "productId": "fhbe3f7b58",
+            "name": "Violão Vogga VCK 370",
+            "stemName": "Violão Vogga VCK 370",
+            "categoryIds": [
+                "ISVI IICO"
+            ],
+            "departmentIds": [
+                "IM"
+            ],
+            "currentPrice": 498.26,
+            "onSale": false
+        }
+    ],
+    "subject": "Quem viu este produto, viu estes também",
+    "mobileSubject": "Quem viu este produto, viu estes também"
+}
