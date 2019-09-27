@@ -1,0 +1,9 @@
+search:
+http://demo0857759.mockable.io/search/capinha
+http://demo0857759.mockable.io/search/mochila
+http://demo0857759.mockable.io/search/violao
+
+wvav:
+http://demo0857759.mockable.io/wvav/capinha
+http://demo0857759.mockable.io/wvav/mochila
+http://demo0857759.mockable.io/wvav/violao
