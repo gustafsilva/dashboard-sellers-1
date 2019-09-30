@@ -8,7 +8,6 @@ import {
   Card,
   CardActions,
   CardContent,
-  Checkbox,
   Table,
   TableBody,
   TableCell,
@@ -42,9 +41,10 @@ const ProductsTable = (props) => {
 
   const classes = useStyles();
 
-  const [selectedProducts, setSelectedProducts] = useState([]);
+  const [selectedProducts ] = useState([]);
   const [rowsPerPage, setRowsPerPage] = useState(10);
   const [page, setPage] = useState(0);
+  /*
 
   const handleSelectAll = (event) => {
     let newSelectedProducts = [];
@@ -77,6 +77,7 @@ const ProductsTable = (props) => {
 
     setSelectedProducts(newSelectedProducts);
   };
+  */
 
   const handlePageChange = (event, pageChange) => {
     setPage(pageChange);
@@ -97,21 +98,11 @@ const ProductsTable = (props) => {
             <Table>
               <TableHead>
                 <TableRow>
-                  <TableCell padding="checkbox">
-                    <Checkbox
-                      checked={selectedProducts.length === products.length}
-                      color="primary"
-                      indeterminate={
-                        selectedProducts.length > 0 && selectedProducts.length < products.length
-                      }
-                      onChange={handleSelectAll}
-                    />
-                  </TableCell>
                   <TableCell>Código</TableCell>
                   <TableCell>Nome</TableCell>
                   <TableCell>Preço</TableCell>
                   <TableCell>Concorrentes</TableCell>
-                  <TableCell>Última Venda</TableCell>
+                  <TableCell>Analisar</TableCell>
                 </TableRow>
               </TableHead>
               <TableBody>
@@ -122,14 +113,6 @@ const ProductsTable = (props) => {
                     key={product.code}
                     selected={selectedProducts.indexOf(product.code) !== -1}
                   >
-                    <TableCell padding="checkbox">
-                      <Checkbox
-                        checked={selectedProducts.indexOf(product.code) !== -1}
-                        color="primary"
-                        onChange={(event) => handleSelectOne(event, product.code)}
-                        value="true"
-                      />
-                    </TableCell>
                     <TableCell>{product.code}</TableCell>
                     <TableCell>{product.name}</TableCell>
                     <TableCell>{`R$ ${product.price}`}</TableCell>

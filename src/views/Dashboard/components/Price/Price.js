@@ -3,7 +3,6 @@ import clsx from 'clsx';
 import PropTypes from 'prop-types';
 import { makeStyles } from '@material-ui/styles';
 import { Card, CardContent, Grid, Typography, Avatar } from '@material-ui/core';
-import ArrowDownwardIcon from '@material-ui/icons/ArrowDownward';
 import AttachMoney from '@material-ui/icons/AttachMoney';
 
 const useStyles = makeStyles((theme) => ({

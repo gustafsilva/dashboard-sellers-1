@@ -22,8 +22,8 @@ RouteWithLayout.defaultProps = {
 };
 
 RouteWithLayout.propTypes = {
-  component: PropTypes.node.isRequired,
-  layout: PropTypes.node.isRequired,
+  component: PropTypes.func.isRequired,
+  layout: PropTypes.func.isRequired,
   path: PropTypes.string,
 };
 

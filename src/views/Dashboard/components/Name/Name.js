@@ -7,9 +7,7 @@ import {
   CardContent,
   Grid,
   Typography,
-  Avatar,
 } from '@material-ui/core';
-import TrendingDown from '@material-ui/icons/Fingerprint';
 
 const useStyles = makeStyles((theme) => ({
   root: {

@@ -2,7 +2,6 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import clsx from 'clsx';
 import { makeStyles } from '@material-ui/styles';
-import { Button } from '@material-ui/core';
 
 import { SearchInput } from 'components';
 
@@ -39,20 +38,10 @@ const ProductsToolbar = (props) => {
       className={clsx(classes.root, className)}
     >
       <div className={classes.row}>
-        <span className={classes.spacer} />
-        <Button className={classes.importButton}>Remover</Button>
-        <Button className={classes.exportButton}>Editar</Button>
-        <Button
-          color="primary"
-          variant="contained"
-        >
-          Adicionar Produto
-        </Button>
-      </div>
-      <div className={classes.row}>
         <SearchInput
           className={classes.searchInput}
           placeholder="Buscar produto"
+          onChange={() => {}}
         />
       </div>
     </div>

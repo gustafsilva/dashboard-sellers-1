@@ -10,7 +10,6 @@ import {
   TotalProfit,
   LatestSales,
   Name,
-  LatestProducts,
   LatestOrders,
   Price,
 } from './components';
@@ -92,7 +91,7 @@ const Dashboard = () => {
             xl={12}
             xs={12}
           >
-            <MinimumValue />
+            <MaximumValue />
           </Grid>
           <Grid
             item
@@ -112,7 +111,7 @@ const Dashboard = () => {
             xs={12}
             className={classes.valuesPrice}
           >
-            <MaximumValue />
+            <MinimumValue />
           </Grid>
         </Grid>
         <Grid

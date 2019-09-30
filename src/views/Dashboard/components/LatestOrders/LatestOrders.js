@@ -6,7 +6,6 @@ import PropTypes from 'prop-types';
 import { makeStyles } from '@material-ui/styles';
 import {
   Card,
-  CardActions,
   CardHeader,
   CardContent,
   Button,
@@ -16,10 +15,7 @@ import {
   TableCell,
   TableHead,
   TableRow,
-  Tooltip,
-  TableSortLabel
 } from '@material-ui/core';
-import ArrowRightIcon from '@material-ui/icons/ArrowRight';
 
 import mockData from './data';
 import { StatusBullet } from 'components';
@@ -116,15 +112,6 @@ const LatestOrders = props => {
         </PerfectScrollbar>
       </CardContent>
       <Divider />
-      <CardActions className={classes.actions}>
-        <Button
-          color="primary"
-          size="small"
-          variant="text"
-        >
-          Todos <ArrowRightIcon />
-        </Button>
-      </CardActions>
     </Card>
   );
 };

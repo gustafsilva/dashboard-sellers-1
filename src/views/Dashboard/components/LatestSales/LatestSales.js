@@ -1,7 +1,6 @@
 import React from 'react';
 import clsx from 'clsx';
 import PropTypes from 'prop-types';
-import { Bar } from 'react-chartjs-2';
 import { makeStyles } from '@material-ui/styles';
 import {
   Card,
@@ -9,19 +8,16 @@ import {
   CardContent,
   CardActions,
   Divider,
-  Button
+  Button,
 } from '@material-ui/core';
 import ArrowDropDownIcon from '@material-ui/icons/ArrowDropDown';
 import ArrowRightIcon from '@material-ui/icons/ArrowRight';
 
 import Line from './line';
 
-import { data, options } from './chart';
-
 const useStyles = makeStyles(() => ({
   root: {},
   chartContainer: {
-    height: 400,
     position: 'relative',
     marginBottom: 23,
   },
@@ -57,6 +53,16 @@ const LatestSales = props => {
           <Line />
         </div>
       </CardContent>
+      <Divider />
+      <CardActions className={classes.actions}>
+        <Button
+          color="primary"
+          size="small"
+          variant="text"
+        >
+          Próximo <ArrowRightIcon />
+        </Button>
+      </CardActions>
     </Card>
   );
 };

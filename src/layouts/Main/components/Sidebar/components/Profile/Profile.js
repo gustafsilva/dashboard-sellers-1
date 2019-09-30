@@ -27,9 +27,9 @@ const Profile = props => {
   const classes = useStyles();
 
   const user = {
-    name: 'Bill Gates',
-    avatar: '/images/avatars/gates.jpg',
-    bio: 'Microsoft'
+    name: 'Lu da Magalu',
+    avatar: '/images/avatars/lu.jpeg',
+    bio: 'Magazine Luiza',
   };
 
   return (
