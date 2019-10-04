@@ -2,19 +2,16 @@ import React from 'react';
 import clsx from 'clsx';
 import PropTypes from 'prop-types';
 import { makeStyles } from '@material-ui/styles';
-import {
-  Card,
-  CardContent,
-  Grid,
-  Typography,
-} from '@material-ui/core';
+import { Card, CardContent, Grid, Typography, Avatar } from '@material-ui/core';
+import ArrowDownwardIcon from '@material-ui/icons/ArrowDownward';
+import TrendingDown from '@material-ui/icons/StoreMallDirectory';
 
 const useStyles = makeStyles((theme) => ({
   root: {
     height: '100%',
   },
   content: {
-    justifyContent: 'center',
+    alignItems: 'center',
     display: 'flex',
   },
   title: {
@@ -29,10 +26,22 @@ const useStyles = makeStyles((theme) => ({
     height: 32,
     width: 32,
   },
+  difference: {
+    marginTop: theme.spacing(2),
+    display: 'flex',
+    alignItems: 'center',
+  },
+  differenceIcon: {
+    color: theme.palette.error.dark,
+  },
+  differenceValue: {
+    color: theme.palette.error.dark,
+    marginRight: theme.spacing(1),
+  }
 }));
 
-const Name = (props) => {
-  const { className, children,...rest } = props;
+const MinimumValue = (props) => {
+  const { className, children, ...rest } = props;
 
   const classes = useStyles();
 
@@ -45,7 +54,6 @@ const Name = (props) => {
         <Grid
           container
           justify="space-between"
-          alignItems="center"
         >
           <Grid item>
             <Typography
@@ -54,9 +62,14 @@ const Name = (props) => {
               gutterBottom
               variant="body2"
             >
-              NOME
+              QNTD. SELLERS
             </Typography>
-            <Typography variant="h5">{children}</Typography>
+            <Typography variant="h3">{children}</Typography>
+          </Grid>
+          <Grid item>
+            <Avatar className={classes.avatar}>
+              <TrendingDown className={classes.icon} />
+            </Avatar>
           </Grid>
         </Grid>
       </CardContent>
@@ -64,12 +77,8 @@ const Name = (props) => {
   );
 };
 
-Name.defaulProps = {
-  className: '',
-};
-
-Name.propTypes = {
+MinimumValue.propTypes = {
   className: PropTypes.string,
 };
 
-export default Name;
+export default MinimumValue;

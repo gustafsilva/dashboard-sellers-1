@@ -12,9 +12,6 @@ const data = {
     'Julho',
     'Agosto',
     'Setembro',
-    'Outubro',
-    'Novembro',
-    'Dezembro',
   ],
   datasets: [
     {
@@ -35,10 +32,21 @@ const data = {
       pointHoverBorderWidth: 2,
       pointRadius: 1,
       pointHitRadius: 10,
-      data: [65, 59, 80, 81, 56, 55, 40, 65, 68, 69, 67, 60],
+      data: [65, 59, 80, 81, 56, 55, 40, 65, 68],
     },
   ],
 };
+
+function getRandomInt(min, max) {
+  const minCeil = Math.ceil(min);
+  const maxFloor = Math.floor(max);
+  return Math.floor(Math.random() * (maxFloor - minCeil)) + minCeil;
+}
+
+function gerarGrafico(tamanho) {
+  const grafico = Array(tamanho);
+  return grafico.map(() => getRandomInt(0, 100));
+}
 
 const options = {
   legend: {

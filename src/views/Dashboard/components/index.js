@@ -10,3 +10,5 @@ export { default as UsersByDevice } from './UsersByDevice';
 export { default as Code } from './Code';
 export { default as Name } from './Name';
 export { default as Price } from './Price';
+export { default as Sellers } from './Sellers';
+export { default as Search } from './Search';

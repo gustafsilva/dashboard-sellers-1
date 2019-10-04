@@ -40,7 +40,7 @@ const useStyles = makeStyles((theme) => ({
 }));
 
 const Price = (props) => {
-  const { className, ...rest } = props;
+  const { className, children, ...rest } = props;
 
   const classes = useStyles();
 
@@ -63,7 +63,7 @@ const Price = (props) => {
             >
               PREÇO ATUAL
             </Typography>
-            <Typography variant="h4">R$24,00</Typography>
+            <Typography variant="h4">R${children}</Typography>
           </Grid>
           <Grid item>
             <Avatar className={classes.avatar}>

@@ -41,7 +41,7 @@ const useStyles = makeStyles((theme) => ({
 }));
 
 const MeanValue = (props) => {
-  const { className, ...rest } = props;
+  const { className, children, ...rest } = props;
 
   const classes = useStyles();
 
@@ -64,7 +64,7 @@ const MeanValue = (props) => {
             >
               VALOR MÉDIO
             </Typography>
-            <Typography variant="h3">R$29,00</Typography>
+            <Typography variant="h3">R${children}</Typography>
           </Grid>
           <Grid item>
             <Avatar className={classes.avatar}>
@@ -72,21 +72,6 @@ const MeanValue = (props) => {
             </Avatar>
           </Grid>
         </Grid>
-        <div className={classes.difference}>
-          <ArrowUpwardIcon className={classes.differenceIcon} />
-          <Typography
-            className={classes.differenceValue}
-            variant="body2"
-          >
-            16%
-          </Typography>
-          <Typography
-            className={classes.caption}
-            variant="caption"
-          >
-            EM COMPARAÇÃO AO VALOR DO SEU PRODUTO
-          </Typography>
-        </div>
       </CardContent>
     </Card>
   );

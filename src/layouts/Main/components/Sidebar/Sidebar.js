@@ -41,11 +41,6 @@ const Sidebar = (props) => {
 
   const pages = [
     {
-      title: 'Explorar',
-      href: '/explorar',
-      icon: <ExploreIcon />,
-    },
-    {
       title: 'Dashboard',
       href: '/dashboard',
       icon: <DashboardIcon />,
@@ -54,11 +49,6 @@ const Sidebar = (props) => {
       title: 'Meus Produtos',
       href: '/products',
       icon: <FormatListBulletedIcon />,
-    },
-    {
-      title: 'Configurações',
-      href: '/settings',
-      icon: <SettingsIcon />,
     },
     {
       title: 'Sair',

@@ -34,7 +34,7 @@ const useStyles = makeStyles((theme) => ({
 }));
 
 const Code = (props) => {
-  const { className, ...rest } = props;
+  const { className, children, ...rest } = props;
 
   const classes = useStyles();
 
@@ -58,7 +58,7 @@ const Code = (props) => {
             >
               CÓDIGO
             </Typography>
-            <Typography variant="h4">218450600</Typography>
+            <Typography variant="h4">{children.toUpperCase()}</Typography>
           </Grid>
           <Grid item>
             <Avatar className={classes.avatar}>

@@ -1,6 +1,9 @@
 import React from 'react';
 import { makeStyles } from '@material-ui/styles';
 import { Grid } from '@material-ui/core';
+import { connect } from 'react-redux';
+
+import { GET_PRODUCT, getProduct } from '../../store/actions/product';
 
 import {
   MinimumValue,
@@ -12,6 +15,8 @@ import {
   Name,
   LatestOrders,
   Price,
+  Sellers,
+  Search,
 } from './components';
 
 const useStyles = makeStyles((theme) => ({
@@ -23,8 +28,31 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-const Dashboard = () => {
+function getRandomInt(min, max) {
+  const minCeil = Math.ceil(min);
+  const maxFloor = Math.floor(max);
+  return Math.floor(Math.random() * (maxFloor - minCeil)) + minCeil;
+}
+
+const createDataVoid = (product) => ({
+  ...product,
+  min: product.currentPrice - product.currentPrice * 0.2,
+  mean: product.currentPrice + product.currentPrice * 0.3,
+  max: product.currentPrice + product.currentPrice * 0.7,
+  sellerTheSameProduct: getRandomInt(1, 15),
+});
+
+
+const Dashboard = ({ product, products, dispatch }) => {
   const classes = useStyles();
+
+  const changeProductDetail = (productName) => {
+    const productDetail = products.filter((p) => p.name === productName);
+    console.log(productDetail);
+    if (productDetail) {
+      dispatch(getProduct(createDataVoid(productDetail[0])));
+    }
+  };
 
   return (
     <div className={classes.root}>
@@ -34,12 +62,12 @@ const Dashboard = () => {
       >
         <Grid
           item
-          lg={3}
-          sm={6}
-          xl={3}
+          lg={12}
+          sm={12}
+          xl={12}
           xs={12}
         >
-          <Name />
+          <Search data={products} productSelect={changeProductDetail} />
         </Grid>
         <Grid
           item
@@ -48,7 +76,7 @@ const Dashboard = () => {
           xl={3}
           xs={12}
         >
-          <Code />
+          <Name>{product.name}</Name>
         </Grid>
         <Grid
           item
@@ -57,7 +85,16 @@ const Dashboard = () => {
           xl={3}
           xs={12}
         >
-          <Price />
+          <Code>{product.productId}</Code>
+        </Grid>
+        <Grid
+          item
+          lg={3}
+          sm={6}
+          xl={3}
+          xs={12}
+        >
+          <Price>{product.currentPrice}</Price>
         </Grid>
         <Grid
           item
@@ -77,6 +114,7 @@ const Dashboard = () => {
         >
           <LatestSales />
         </Grid>
+
         <Grid
           item
           lg={4}
@@ -91,7 +129,7 @@ const Dashboard = () => {
             xl={12}
             xs={12}
           >
-            <MaximumValue />
+            <Sellers>{product.sellerTheSameProduct}</Sellers>
           </Grid>
           <Grid
             item
@@ -101,7 +139,7 @@ const Dashboard = () => {
             xs={12}
             className={classes.valuesPrice}
           >
-            <MeanValue />
+            <MaximumValue>{product.max}</MaximumValue>
           </Grid>
           <Grid
             item
@@ -111,7 +149,17 @@ const Dashboard = () => {
             xs={12}
             className={classes.valuesPrice}
           >
-            <MinimumValue />
+            <MeanValue>{product.mean}</MeanValue>
+          </Grid>
+          <Grid
+            item
+            lg={12}
+            sm={12}
+            xl={12}
+            xs={12}
+            className={classes.valuesPrice}
+          >
+            <MinimumValue>{product.min}</MinimumValue>
           </Grid>
         </Grid>
         <Grid
@@ -128,4 +176,10 @@ const Dashboard = () => {
   );
 };
 
-export default Dashboard;
+const mapStateToProps = ({ product, products, dispatch }) => ({
+  product,
+  products,
+  dispatch,
+});
+
+export default connect(mapStateToProps)(Dashboard);

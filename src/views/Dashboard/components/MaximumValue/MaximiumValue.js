@@ -41,7 +41,7 @@ const useStyles = makeStyles((theme) => ({
 }));
 
 const MinimumValue = (props) => {
-  const { className, ...rest } = props;
+  const { className, children, ...rest } = props;
 
   const classes = useStyles();
 
@@ -64,7 +64,7 @@ const MinimumValue = (props) => {
             >
               VALOR MÁXIMO
             </Typography>
-            <Typography variant="h3">R$24,00</Typography>
+            <Typography variant="h3">R${children}</Typography>
           </Grid>
           <Grid item>
             <Avatar className={classes.avatar}>
@@ -72,21 +72,6 @@ const MinimumValue = (props) => {
             </Avatar>
           </Grid>
         </Grid>
-        <div className={classes.difference}>
-          <ArrowDownwardIcon className={classes.differenceIcon} />
-          <Typography
-            className={classes.differenceValue}
-            variant="body2"
-          >
-            12%
-          </Typography>
-          <Typography
-            className={classes.caption}
-            variant="caption"
-          >
-            EM COMPARAÇÃO AO VALOR DO SEU PRODUTO
-          </Typography>
-        </div>
       </CardContent>
     </Card>
   );

@@ -59,16 +59,7 @@ const LatestOrders = props => {
       className={clsx(classes.root, className)}
     >
       <CardHeader
-        action={
-          <Button
-            color="primary"
-            size="small"
-            variant="outlined"
-          >
-            Adicionar
-          </Button>
-        }
-        title="Produtos Concorrentes"
+        title="Produtos Relacionados"
       />
       <Divider />
       <CardContent className={classes.content}>
@@ -81,6 +72,7 @@ const LatestOrders = props => {
                   <TableCell>Nome</TableCell>
                   <TableCell>Vendedor</TableCell>
                   <TableCell>Preço</TableCell>
+                  <TableCell>Analisar</TableCell>
                 </TableRow>
               </TableHead>
               <TableBody>
@@ -103,6 +95,9 @@ const LatestOrders = props => {
                         />
                         {order.status}
                       </div>
+                    </TableCell>
+                    <TableCell>
+                      <a href="#">Analisar</a>
                     </TableCell>
                   </TableRow>
                 ))}

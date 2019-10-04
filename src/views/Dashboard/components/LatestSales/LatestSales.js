@@ -6,12 +6,10 @@ import {
   Card,
   CardHeader,
   CardContent,
-  CardActions,
   Divider,
   Button,
 } from '@material-ui/core';
 import ArrowDropDownIcon from '@material-ui/icons/ArrowDropDown';
-import ArrowRightIcon from '@material-ui/icons/ArrowRight';
 
 import Line from './line';
 
@@ -53,16 +51,6 @@ const LatestSales = props => {
           <Line />
         </div>
       </CardContent>
-      <Divider />
-      <CardActions className={classes.actions}>
-        <Button
-          color="primary"
-          size="small"
-          variant="text"
-        >
-          Próximo <ArrowRightIcon />
-        </Button>
-      </CardActions>
     </Card>
   );
 };

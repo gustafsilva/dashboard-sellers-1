@@ -74,9 +74,9 @@ const TotalProfit = (props) => {
             </Typography>
             <Typography
               color="inherit"
-              variant="h2"
+              variant="h4"
             >
-              R$9,00
+              SAIBA MAIS
             </Typography>
           </Grid>
           <Grid item>
@@ -89,8 +89,8 @@ const TotalProfit = (props) => {
               className={classes.caption}
               variant="caption"
             >
-              ECONOMIZE
-              <b> R$2,10 </b>
+              ECONOMIZE ATÉ
+              <b> 10% </b>
               AGORA MESMO...
             </Typography>
           </div>

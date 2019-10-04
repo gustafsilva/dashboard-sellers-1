@@ -14,6 +14,8 @@ import {
   TableHead,
   TableRow,
   TablePagination,
+  Typography,
+  Link,
 } from '@material-ui/core';
 
 const useStyles = makeStyles((theme) => ({
@@ -37,7 +39,7 @@ const useStyles = makeStyles((theme) => ({
 }));
 
 const ProductsTable = (props) => {
-  const { className, products, ...rest } = props;
+  const { className, products, changeProduct, ...rest } = props;
 
   const classes = useStyles();
 
@@ -101,7 +103,7 @@ const ProductsTable = (props) => {
                   <TableCell>Código</TableCell>
                   <TableCell>Nome</TableCell>
                   <TableCell>Preço</TableCell>
-                  <TableCell>Concorrentes</TableCell>
+                  <TableCell>Estoque</TableCell>
                   <TableCell>Analisar</TableCell>
                 </TableRow>
               </TableHead>
@@ -110,17 +112,19 @@ const ProductsTable = (props) => {
                   <TableRow
                     className={classes.tableRow}
                     hover
-                    key={product.code}
-                    selected={selectedProducts.indexOf(product.code) !== -1}
+                    key={product.productId}
+                    selected={selectedProducts.indexOf(product.productId) !== -1}
                   >
-                    <TableCell>{product.code}</TableCell>
+                    <TableCell>{product.productId.toUpperCase()}</TableCell>
                     <TableCell>{product.name}</TableCell>
-                    <TableCell>{`R$ ${product.price}`}</TableCell>
+                    <TableCell>{`R$${product.currentPrice}`}</TableCell>
                     <TableCell>
-                      {product.competitor}
+                      {product.stock_count}
                     </TableCell>
                     <TableCell>
-                      {moment(product.createdAt).format('DD/MM/YYYY')}
+                      <Link href="#" onClick={() => changeProduct(product)}>
+                        Analisar
+                      </Link>
                     </TableCell>
                   </TableRow>
                 ))}
@@ -129,19 +133,6 @@ const ProductsTable = (props) => {
           </div>
         </PerfectScrollbar>
       </CardContent>
-      <CardActions className={classes.actions}>
-        <TablePagination
-          component="div"
-          count={products.length}
-          onChangePage={handlePageChange}
-          onChangeRowsPerPage={handleRowsPerPageChange}
-          page={page}
-          rowsPerPage={rowsPerPage}
-          rowsPerPageOptions={[5, 10, 25]}
-          labelRowsPerPage="Produtos por página"
-          labelDisplayedRows={({ from, to, count }) => `${from}-${to} de ${count}`}
-        />
-      </CardActions>
     </Card>
   );
 };
