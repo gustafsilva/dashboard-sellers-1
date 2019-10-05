@@ -3,8 +3,8 @@ import clsx from 'clsx';
 import PropTypes from 'prop-types';
 import { makeStyles } from '@material-ui/styles';
 import { Card, CardContent, Grid, Typography, Avatar } from '@material-ui/core';
-import ArrowDownwardIcon from '@material-ui/icons/ArrowDownward';
 import TrendingDown from '@material-ui/icons/TrendingDown';
+import { formatMoney } from 'utils';
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -64,7 +64,7 @@ const MinimumValue = (props) => {
             >
               VALOR MÍNIMO
             </Typography>
-            <Typography variant="h3">R${children}</Typography>
+            <Typography variant="h3">{formatMoney(children)}</Typography>
           </Grid>
           <Grid item>
             <Avatar className={classes.avatar}>

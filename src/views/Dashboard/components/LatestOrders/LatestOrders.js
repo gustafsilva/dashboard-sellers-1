@@ -1,6 +1,5 @@
-import React, { useState } from 'react';
+import React from 'react';
 import clsx from 'clsx';
-import moment from 'moment';
 import PerfectScrollbar from 'react-perfect-scrollbar';
 import PropTypes from 'prop-types';
 import { makeStyles } from '@material-ui/styles';
@@ -8,17 +7,16 @@ import {
   Card,
   CardHeader,
   CardContent,
-  Button,
   Divider,
   Table,
   TableBody,
   TableCell,
   TableHead,
   TableRow,
+  Link,
 } from '@material-ui/core';
 
-import mockData from './data';
-import { StatusBullet } from 'components';
+import { formatMoney, getRandomInt } from '../../../../utils';
 
 const useStyles = makeStyles(theme => ({
   root: {},
@@ -40,18 +38,10 @@ const useStyles = makeStyles(theme => ({
   }
 }));
 
-const statusColors = {
-  delivered: 'success',
-  pending: 'info',
-  refunded: 'danger'
-};
-
 const LatestOrders = props => {
-  const { className, ...rest } = props;
+  const { className, data, changeProduct, ...rest } = props;
 
   const classes = useStyles();
-
-  const [orders] = useState(mockData);
 
   return (
     <Card
@@ -76,28 +66,19 @@ const LatestOrders = props => {
                 </TableRow>
               </TableHead>
               <TableBody>
-                {orders.map(order => (
+                {data.map(product => (
                   <TableRow
                     hover
-                    key={order.id}
+                    key={product.productId + '' + getRandomInt(0, 1000)}
                   >
-                    <TableCell>{order.ref}</TableCell>
-                    <TableCell>{order.customer.name}</TableCell>
+                    <TableCell>{product.productId.toUpperCase()}</TableCell>
+                    <TableCell>{product.name}</TableCell>
+                    <TableCell>Seller {getRandomInt(1, 10)}</TableCell>
                     <TableCell>
-                      {moment(order.createdAt).format('DD/MM/YYYY')}
+                      {formatMoney(product.currentPrice)}
                     </TableCell>
                     <TableCell>
-                      <div className={classes.statusContainer}>
-                        <StatusBullet
-                          className={classes.status}
-                          color={statusColors[order.status]}
-                          size="sm"
-                        />
-                        {order.status}
-                      </div>
-                    </TableCell>
-                    <TableCell>
-                      <a href="#">Analisar</a>
+                      <Link href="#" onClick={() => changeProduct(product.name)}>Analisar</Link>
                     </TableCell>
                   </TableRow>
                 ))}

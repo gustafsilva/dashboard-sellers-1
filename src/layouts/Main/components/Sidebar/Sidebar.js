@@ -4,9 +4,7 @@ import PropTypes from 'prop-types';
 import { makeStyles } from '@material-ui/styles';
 import { Divider, Drawer } from '@material-ui/core';
 import DashboardIcon from '@material-ui/icons/Dashboard';
-import SettingsIcon from '@material-ui/icons/Settings';
 import FormatListBulletedIcon from '@material-ui/icons/FormatListBulleted';
-import ExploreIcon from '@material-ui/icons/Explore';
 import InputIcon from '@material-ui/icons/Input';
 
 import { Profile, SidebarNav } from './components';

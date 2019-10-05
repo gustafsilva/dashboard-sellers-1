@@ -3,7 +3,7 @@ import { makeStyles } from '@material-ui/styles';
 import { connect } from 'react-redux';
 import { withRouter } from 'react-router-dom';
 
-import { ProductsToolbar, ProductsTable } from './components';
+import { ProductsTable } from './components';
 import { getProduct } from '../../store/actions/product';
 
 const useStyles = makeStyles((theme) => ({

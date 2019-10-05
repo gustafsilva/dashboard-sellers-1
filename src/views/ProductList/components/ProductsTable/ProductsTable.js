@@ -1,22 +1,19 @@
 import React, { useState } from 'react';
 import clsx from 'clsx';
 import PropTypes from 'prop-types';
-import moment from 'moment';
 import PerfectScrollbar from 'react-perfect-scrollbar';
 import { makeStyles } from '@material-ui/styles';
 import {
   Card,
-  CardActions,
   CardContent,
   Table,
   TableBody,
   TableCell,
   TableHead,
   TableRow,
-  TablePagination,
-  Typography,
   Link,
 } from '@material-ui/core';
+import { formatMoney } from 'utils';
 
 const useStyles = makeStyles((theme) => ({
   root: {},
@@ -44,50 +41,7 @@ const ProductsTable = (props) => {
   const classes = useStyles();
 
   const [selectedProducts ] = useState([]);
-  const [rowsPerPage, setRowsPerPage] = useState(10);
-  const [page, setPage] = useState(0);
-  /*
-
-  const handleSelectAll = (event) => {
-    let newSelectedProducts = [];
-
-    if (event.target.checked) {
-      newSelectedProducts = props.products.map((product) => product.code);
-    } else {
-      newSelectedProducts = [];
-    }
-
-    setSelectedProducts(newSelectedProducts);
-  };
-
-  const handleSelectOne = (event, id) => {
-    const selectedIndex = selectedProducts.indexOf(id);
-    let newSelectedProducts = [];
-
-    if (selectedIndex === -1) {
-      newSelectedProducts = newSelectedProducts.concat(selectedProducts, id);
-    } else if (selectedIndex === 0) {
-      newSelectedProducts = newSelectedProducts.concat(selectedProducts.slice(1));
-    } else if (selectedIndex === selectedProducts.length - 1) {
-      newSelectedProducts = newSelectedProducts.concat(selectedProducts.slice(0, -1));
-    } else if (selectedIndex > 0) {
-      newSelectedProducts = newSelectedProducts.concat(
-        selectedProducts.slice(0, selectedIndex),
-        selectedProducts.slice(selectedIndex + 1),
-      );
-    }
-
-    setSelectedProducts(newSelectedProducts);
-  };
-  */
-
-  const handlePageChange = (event, pageChange) => {
-    setPage(pageChange);
-  };
-
-  const handleRowsPerPageChange = (event) => {
-    setRowsPerPage(event.target.value);
-  };
+  const [rowsPerPage] = useState(10);
 
   return (
     <Card
@@ -117,7 +71,7 @@ const ProductsTable = (props) => {
                   >
                     <TableCell>{product.productId.toUpperCase()}</TableCell>
                     <TableCell>{product.name}</TableCell>
-                    <TableCell>{`R$${product.currentPrice}`}</TableCell>
+                    <TableCell>{formatMoney(product.currentPrice)}</TableCell>
                     <TableCell>
                       {product.stock_count}
                     </TableCell>

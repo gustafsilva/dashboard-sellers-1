@@ -12,7 +12,8 @@ const data = [
       'IM'
     ],
     'currentPrice': 484.9,
-    'onSale': false
+    'onSale': false,
+    'suggestion': 'violao',
   },
   {
     'productId': '771269300',
@@ -25,6 +26,7 @@ const data = [
       'IM'
     ],
     'currentPrice': 411.9,
+    'suggestion': 'violao',
     'onSale': false
   },
   {
@@ -38,6 +40,7 @@ const data = [
       'IM'
     ],
     'currentPrice': 499,
+    'suggestion': 'violao',
     'onSale': false
   },
   {
@@ -51,6 +54,7 @@ const data = [
       'IM'
     ],
     'currentPrice': 199.9,
+    'suggestion': 'violao',
     'onSale': false
   },
   {
@@ -64,6 +68,7 @@ const data = [
       'IM'
     ],
     'currentPrice': 392.96,
+    'suggestion': 'violao',
     'onSale': false
   },
   {
@@ -77,6 +82,7 @@ const data = [
       'IM'
     ],
     'currentPrice': 194.99,
+    'suggestion': 'violao',
     'onSale': false
   },
   {
@@ -89,6 +95,7 @@ const data = [
     'departmentIds': [
       'IM'
     ],
+    'suggestion': 'violao',
     'currentPrice': 295.9,
     'onSale': false
   },
@@ -102,6 +109,7 @@ const data = [
     'departmentIds': [
       'IM'
     ],
+    'suggestion': 'violao',
     'currentPrice': 263.9,
     'onSale': false
   },
@@ -116,6 +124,7 @@ const data = [
       'IM'
     ],
     'currentPrice': 396.99,
+    'suggestion': 'violao',
     'onSale': false
   },
   {
@@ -129,6 +138,7 @@ const data = [
       'IM'
     ],
     'currentPrice': 184.9,
+    'suggestion': 'violao',
     'onSale': false
   },
   {
@@ -142,6 +152,7 @@ const data = [
       'IM'
     ],
     'currentPrice': 706.9,
+    'suggestion': 'violao',
     'onSale': false
   },
   {
@@ -155,6 +166,7 @@ const data = [
       'IM'
     ],
     'currentPrice': 358.9,
+    'suggestion': 'violao',
     'onSale': false
   },
   {
@@ -168,6 +180,7 @@ const data = [
       'IM'
     ],
     'currentPrice': 368.9,
+    'suggestion': 'violao',
     'onSale': false
   },
   {
@@ -181,6 +194,7 @@ const data = [
       'IM'
     ],
     'currentPrice': 379,
+    'suggestion': 'violao',
     'onSale': false
   },
   {
@@ -194,6 +208,7 @@ const data = [
       'IM'
     ],
     'currentPrice': 229,
+    'suggestion': 'violao',
     'onSale': false
   },
   {
@@ -206,6 +221,7 @@ const data = [
     'departmentIds': [
       'IM'
     ],
+    'suggestion': 'violao',
     'currentPrice': 498.26,
     'onSale': false
   },
@@ -220,6 +236,7 @@ const data = [
       "MD"
     ],
     "currentPrice": 26.28,
+    'suggestion': 'mochila',
     "onSale": false
   },
   {
@@ -233,6 +250,7 @@ const data = [
       "MD"
     ],
     "currentPrice": 26.28,
+    'suggestion': 'mochila',
     "onSale": false
   },
   {
@@ -246,6 +264,7 @@ const data = [
       "MD"
     ],
     "currentPrice": 26.28,
+    'suggestion': 'mochila',
     "onSale": false
   },
   {
@@ -259,6 +278,7 @@ const data = [
       "MD"
     ],
     "currentPrice": 26.28,
+    'suggestion': 'mochila',
     "onSale": false
   },
   {
@@ -272,6 +292,7 @@ const data = [
       "MD"
     ],
     "currentPrice": 19.9,
+    'suggestion': 'mochila',
     "onSale": false
   },
   {
@@ -285,6 +306,7 @@ const data = [
       "MD"
     ],
     "currentPrice": 49.99,
+    'suggestion': 'mochila',
     "onSale": false
   },
   {
@@ -298,6 +320,7 @@ const data = [
       "MD"
     ],
     "currentPrice": 26.28,
+    'suggestion': 'mochila',
     "onSale": false
   },
   {
@@ -311,6 +334,7 @@ const data = [
       "MD"
     ],
     "currentPrice": 26.28,
+    'suggestion': 'mochila',
     "onSale": false
   },
   {
@@ -324,6 +348,7 @@ const data = [
       "MD"
     ],
     "currentPrice": 60.84,
+    'suggestion': 'mochila',
     "onSale": false
   },
   {
@@ -337,6 +362,7 @@ const data = [
       "MD"
     ],
     "currentPrice": 89.9,
+    'suggestion': 'mochila',
     "onSale": false
   },
   {
@@ -350,6 +376,7 @@ const data = [
       "MD"
     ],
     "currentPrice": 39.9,
+    'suggestion': 'mochila',
     "onSale": false
   },
   {
@@ -363,6 +390,7 @@ const data = [
       "MD"
     ],
     "currentPrice": 62.9,
+    'suggestion': 'mochila',
     "onSale": false
   },
   {
@@ -376,6 +404,7 @@ const data = [
       "BB"
     ],
     "currentPrice": 98.16,
+    'suggestion': 'mochila',
     "onSale": false
   },
   {
@@ -389,6 +418,7 @@ const data = [
       "MD"
     ],
     "currentPrice": 41.9,
+    'suggestion': 'mochila',
     "onSale": false
   },
   {
@@ -401,6 +431,7 @@ const data = [
     "departmentIds": [
       "MD"
     ],
+    'suggestion': 'mochila',
     "currentPrice": 32.99,
     "onSale": false
   },
@@ -415,6 +446,7 @@ const data = [
       "MD"
     ],
     "currentPrice": 87.51,
+    'suggestion': 'mochila',
     "onSale": false
   },
   {
@@ -428,6 +460,7 @@ const data = [
       "TE"
     ],
     "currentPrice": 41.56,
+    'suggestion': 'capinha',
     "onSale": true
   },
   {
@@ -441,6 +474,7 @@ const data = [
       "TE"
     ],
     "currentPrice": 749.00,
+    'suggestion': 'capinha',
     "onSale": true
   },
   {
@@ -454,6 +488,7 @@ const data = [
       "TE"
     ],
     "currentPrice": 989.10,
+    'suggestion': 'capinha',
     "onSale": true
   },
   {
@@ -467,6 +502,7 @@ const data = [
       "TE"
     ],
     "currentPrice": 47.57,
+    'suggestion': 'capinha',
     "onSale": false
   },
   {
@@ -480,6 +516,7 @@ const data = [
       "TE"
     ],
     "currentPrice": 999,
+    'suggestion': 'capinha',
     "onSale": false
   },
   {
@@ -493,6 +530,7 @@ const data = [
       "IN"
     ],
     "currentPrice": 22.9,
+    'suggestion': 'capinha',
     "onSale": false
   }
 ];

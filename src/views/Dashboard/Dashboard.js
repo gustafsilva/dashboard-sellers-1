@@ -3,7 +3,7 @@ import { makeStyles } from '@material-ui/styles';
 import { Grid } from '@material-ui/core';
 import { connect } from 'react-redux';
 
-import { GET_PRODUCT, getProduct } from '../../store/actions/product';
+import { getProduct } from '../../store/actions/product';
 
 import {
   MinimumValue,
@@ -43,16 +43,17 @@ const createDataVoid = (product) => ({
 });
 
 
-const Dashboard = ({ product, products, dispatch }) => {
+const Dashboard = ({ product, products, suggestions, dispatch }) => {
   const classes = useStyles();
 
   const changeProductDetail = (productName) => {
     const productDetail = products.filter((p) => p.name === productName);
-    console.log(productDetail);
     if (productDetail) {
       dispatch(getProduct(createDataVoid(productDetail[0])));
     }
   };
+
+  const suggestionsFilter = suggestions[product.suggestion].filter(suggestion => suggestion.name !== product.name);
 
   return (
     <div className={classes.root}>
@@ -169,16 +170,17 @@ const Dashboard = ({ product, products, dispatch }) => {
           xl={12}
           xs={12}
         >
-          <LatestOrders />
+          <LatestOrders data={suggestionsFilter} changeProduct={changeProductDetail} />
         </Grid>
       </Grid>
     </div >
   );
 };
 
-const mapStateToProps = ({ product, products, dispatch }) => ({
+const mapStateToProps = ({ product, products, suggestions, dispatch }) => ({
   product,
   products,
+  suggestions,
   dispatch,
 });
 

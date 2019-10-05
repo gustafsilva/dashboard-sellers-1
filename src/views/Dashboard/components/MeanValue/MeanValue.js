@@ -3,8 +3,8 @@ import clsx from 'clsx';
 import PropTypes from 'prop-types';
 import { makeStyles } from '@material-ui/styles';
 import { Card, CardContent, Grid, Typography, Avatar } from '@material-ui/core';
-import ArrowUpwardIcon from '@material-ui/icons/ArrowUpward';
 import PeopleIcon from '@material-ui/icons/ShowChart';
+import { formatMoney } from 'utils';
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -64,7 +64,7 @@ const MeanValue = (props) => {
             >
               VALOR MÉDIO
             </Typography>
-            <Typography variant="h3">R${children}</Typography>
+            <Typography variant="h3">{formatMoney(children)}</Typography>
           </Grid>
           <Grid item>
             <Avatar className={classes.avatar}>

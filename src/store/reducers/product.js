@@ -18,6 +18,7 @@ export const INIT_STATE = {
   mean: 42.32,
   max: 53.99,
   sellerTheSameProduct: 2,
+  suggestion: 'capinha',
 };
 
 const product = (state = INIT_STATE, action) => {

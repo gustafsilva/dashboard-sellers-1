@@ -19,6 +19,7 @@ export const INIT_STATE = [
     mean: 42.32,
     max: 53.99,
     sellerTheSameProduct: 2,
+    'suggestion': 'capinha',
     stock_count: 21,
   },
   {
@@ -37,6 +38,7 @@ export const INIT_STATE = [
     mean: 48.32,
     max: 89.99,
     sellerTheSameProduct: 5,
+    'suggestion': 'capinha',
     stock_count: 92,
   },
 ];

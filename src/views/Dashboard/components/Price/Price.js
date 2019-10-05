@@ -5,6 +5,8 @@ import { makeStyles } from '@material-ui/styles';
 import { Card, CardContent, Grid, Typography, Avatar } from '@material-ui/core';
 import AttachMoney from '@material-ui/icons/AttachMoney';
 
+import { formatMoney } from '../../../../utils';
+
 const useStyles = makeStyles((theme) => ({
   root: {
     height: '100%',
@@ -63,7 +65,7 @@ const Price = (props) => {
             >
               PREÇO ATUAL
             </Typography>
-            <Typography variant="h4">R${children}</Typography>
+            <Typography variant="h4">{formatMoney(children)}</Typography>
           </Grid>
           <Grid item>
             <Avatar className={classes.avatar}>

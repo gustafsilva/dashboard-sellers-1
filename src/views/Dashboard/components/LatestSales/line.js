@@ -37,16 +37,16 @@ const data = {
   ],
 };
 
-function getRandomInt(min, max) {
-  const minCeil = Math.ceil(min);
-  const maxFloor = Math.floor(max);
-  return Math.floor(Math.random() * (maxFloor - minCeil)) + minCeil;
-}
+// function getRandomInt(min, max) {
+//   const minCeil = Math.ceil(min);
+//   const maxFloor = Math.floor(max);
+//   return Math.floor(Math.random() * (maxFloor - minCeil)) + minCeil;
+// }
 
-function gerarGrafico(tamanho) {
-  const grafico = Array(tamanho);
-  return grafico.map(() => getRandomInt(0, 100));
-}
+// function gerarGrafico(tamanho) {
+//   const grafico = Array(tamanho);
+//   return grafico.map(() => getRandomInt(0, 100));
+// }
 
 const options = {
   legend: {

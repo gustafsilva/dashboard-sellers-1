@@ -27,9 +27,9 @@ const Profile = props => {
   const classes = useStyles();
 
   const user = {
-    name: 'Lu da Magalu',
-    avatar: '/images/avatars/lu.jpeg',
-    bio: 'Magazine Luiza',
+    name: 'Gustavo Freitas',
+    avatar: '/images/avatars/gusta.jpeg',
+    bio: 'Mundo Digital',
   };
 
   return (
