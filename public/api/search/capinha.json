@@ -1,0 +1,234 @@
+{
+    "data": {
+        "id": "bb23ja4ke6",
+        "review_count": 0,
+        "review_score": 0,
+        "variations": [
+            {
+                "id": "bb23ja4ke6",
+                "ean": "7896584042566",
+                "title": "Capa para Celular Motorola Moto G6",
+                "description": "",
+                "reference": "",
+                "brand": "Spark Cases",
+                "sellers": [
+                    {
+                        "description": "Seller 1",
+                        "id": "seller1",
+                        "sku": "470",
+                        "delivery_availability": "nationwide",
+                        "list_price": "19.99",
+                        "price": "19.99",
+                        "stock_count": 59,
+                        "stock_type": "on_seller",
+                        "sold_count": 0,
+                        "sells_to_company": false,
+                        "store_pickup_available": false,
+                        "delivery_plus_1": false,
+                        "delivery_plus_2": false,
+                        "status": "published",
+                        "order": 2,
+                        "best_price": {
+                            "payment_method_id": "boleto",
+                            "payment_method_description": "seller1-ED-10-boleto",
+                            "discount": "0.00",
+                            "total_amount": "19.99"
+                        },
+                        "best_installment_plan": {
+                            "payment_method_id": "visa",
+                            "payment_method_description": "sem juros",
+                            "installment_quantity": 2,
+                            "installment_amount": "9.95",
+                            "interest": "0.00",
+                            "total_amount": "19.99"
+                        },
+                        "details": {
+                            "address": {
+                                "address": "Av. Exemplo",
+                                "number": "0",
+                                "complement": "",
+                                "district": "",
+                                "city": "Maringá",
+                                "state": "PR",
+                                "country": "Brasil",
+                                "zipcode": "00000000"
+                            },
+                            "legal_name": "Jose",
+                            "document_number": "999154878787",
+                            "name": "Jose",
+                            "sells_to_company": false,
+                            "id": "jose"
+                        }
+                    },
+                    {
+                        "description": "Seller 2",
+                        "id": "seller2",
+                        "sku": "470",
+                        "delivery_availability": "nationwide",
+                        "list_price": "15.00",
+                        "price": "15.00",
+                        "stock_count": 10,
+                        "stock_type": "on_seller",
+                        "sold_count": 0,
+                        "sells_to_company": false,
+                        "store_pickup_available": false,
+                        "delivery_plus_1": false,
+                        "delivery_plus_2": false,
+                        "status": "published",
+                        "order": 2,
+                        "best_price": {
+                            "payment_method_id": "boleto",
+                            "payment_method_description": "seller2-ED-10-boleto",
+                            "discount": "0.00",
+                            "total_amount": "15.00"
+                        },
+                        "best_installment_plan": {
+                            "payment_method_id": "visa",
+                            "payment_method_description": "sem juros",
+                            "installment_quantity": 3,
+                            "installment_amount": "6.63",
+                            "interest": "0.00",
+                            "total_amount": "15.00"
+                        },
+                        "details": {
+                            "address": {
+                                "address": "Av. Exemplo",
+                                "number": "0",
+                                "complement": "",
+                                "district": "",
+                                "city": "São Paulo",
+                                "state": "SP",
+                                "country": "Brasil",
+                                "zipcode": "00000000"
+                            },
+                            "contacts": [
+                                {
+                                    "name": "Maria",
+                                    "email": "maria@email.com.br",
+                                    "phone": "1199999999",
+                                    "type": null
+                                }
+                            ],
+                            "legal_name": "Maria",
+                            "document_number": "999154878787",
+                            "name": "Maria",
+                            "sells_to_company": true,
+                            "id": "maria"
+                        }
+                    },
+                    {
+                        "description": "Seller 3",
+                        "id": "seller3",
+                        "sku": "470",
+                        "delivery_availability": "nationwide",
+                        "list_price": "17.99",
+                        "price": "17.99",
+                        "stock_count": 10,
+                        "stock_type": "on_seller",
+                        "sold_count": 0,
+                        "sells_to_company": false,
+                        "store_pickup_available": false,
+                        "delivery_plus_1": false,
+                        "delivery_plus_2": false,
+                        "status": "published",
+                        "order": 2,
+                        "best_price": {
+                            "payment_method_id": "boleto",
+                            "payment_method_description": "seller2-ED-10-boleto",
+                            "discount": "0.00",
+                            "total_amount": "17.99"
+                        },
+                        "best_installment_plan": {
+                            "payment_method_id": "visa",
+                            "payment_method_description": "sem juros",
+                            "installment_quantity": 2,
+                            "installment_amount": "8.99",
+                            "interest": "0.00",
+                            "total_amount": "17.99"
+                        },
+                        "details": {
+                            "address": {
+                                "address": "Av. Exemplo",
+                                "number": "0",
+                                "complement": "",
+                                "district": "",
+                                "city": "São Paulo",
+                                "state": "SP",
+                                "country": "Brasil",
+                                "zipcode": "00000000"
+                            },
+                            "contacts": [
+                                {
+                                    "name": "Maria",
+                                    "email": "maria@email.com.br",
+                                    "phone": "1199999999",
+                                    "type": null
+                                }
+                            ],
+                            "legal_name": "Maria",
+                            "document_number": "999154878787",
+                            "name": "Maria",
+                            "sells_to_company": true,
+                            "id": "maria"
+                        }
+                    }
+                ],
+                "attributes": [],
+                "url": "capinha-de-celular/celulares-e-smartphones/s/te/acce/",
+                "canonical_ids": [
+                    "7180642",
+                    "6735802",
+                    "6147676",
+                    "5579520"
+                ],
+                "product_total_review_count": 0,
+                "product_average_rating": 0,
+                "categories": [
+                    {
+                        "id": "TE",
+                        "name": "Telefonia",
+                        "composite_name": "TE|Capinha",
+                        "url": "capinha-de-celular/celulares-e-smartphones/s/te/",
+                        "subcategories": [
+                            {
+                                "id": "MHCL",
+                                "name": "Mochilas",
+                                "composite_name": "MHCL|Mochilas",
+                                "url": "capinha-de-celular/celulares-e-smartphones/s/te/acce/"
+                            }
+                        ]
+                    }
+                ],
+                "is_delivery_available": true,
+                "dimensions": {
+                    "width": 0.52,
+                    "depth": 0.42,
+                    "weight": 18,
+                    "height": 0.33
+                },
+                "factsheet": {},
+                "main_media": {
+                    "seller_sku": "23860",
+                    "seller_id": "mega-mamute"
+                },
+                "media": {
+                    "audios": [],
+                    "images": [
+                        "https://a-static.mlcdn.com.br/618x463/capa-para-celular-motorola-moto-g6-spark-cases-coracoes-flutuando/sparkcases/59857/b1ff5589cc10feee64b65a109c3bd4c6.jpg"
+                    ],
+                    "podcasts": [],
+                    "videos": []
+                },
+                "path": "capinha-de-celular/celulares-e-smartphones/s/te/acce/",
+                "type": "product",
+                "composite_id": "hj77hef8cj-718064200"
+            }
+        ],
+        "attributes": [],
+        "canonical_ids": [],
+        "type": "product",
+        "sold_count": 0,
+        "is_new_product": false
+    },
+    "partner_id": "0"
+}
