@@ -7,9 +7,7 @@ import {
   CardHeader,
   CardContent,
   Divider,
-  Button,
 } from '@material-ui/core';
-import ArrowDropDownIcon from '@material-ui/icons/ArrowDropDown';
 
 import Line from './line';
 
@@ -36,14 +34,6 @@ const LatestSales = props => {
     >
       <CardHeader
         title="Estatísticas de Busca"
-        action={(
-          <Button
-            size="small"
-            variant="text"
-          >
-            ANUAL <ArrowDropDownIcon />
-          </Button>
-        )}
       />
       <Divider />
       <CardContent>
